@@ -1,0 +1,214 @@
+
+.background{
+    // width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--body-bg), #6f7e39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    // padding:120px 200px;
+
+    .mainComponent{
+        width: 70%;
+        height: 60%;
+        box-sizing: border-box;
+
+        .col-md-6{
+            padding: 0;
+            position: relative;
+
+            .backgroundImage{
+                width: 100%;
+                height: 100%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba($color: #7ccc64, $alpha: 0.8);
+                    
+                }
+
+            }
+            .info{
+                position: absolute;
+                
+                color: #fff;
+                top: 0rem;
+                left: 1.3rem;
+                padding: 3.5rem 0.7rem;
+                
+                
+                .logo{
+                    width: 45%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+                .slogon{
+                    font-size: 2.2rem;
+                    color: #fff;
+                    margin-top: 10px;
+                }
+                .description{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .loginSide{
+            background-color: var(--main-bg);
+            padding: 5rem 2rem;
+            color: #747676;
+            overflow-y: auto;
+
+            p{
+                margin: 0;
+                padding: 0;
+            }
+            .role{
+                display: flex;
+                justify-content: space-between;
+                margin: 0.9rem 0;
+                text-align: center;
+
+                .roleItem{
+                    padding: 0.5rem 1rem;
+                    border: 2px solid #747676;
+                    cursor: pointer;
+
+                    svg{
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    p{
+                        font-size: 0.8rem;
+                    }
+
+                    &:hover{
+                        border: 2px solid #7ccc64;
+                        svg{
+                            path{
+                                fill: #7ccc64;
+                            }
+                        }
+                        p{
+                            color: #7ccc64;
+                        }
+                    }
+                    &.active{
+                        border: 2px solid #7ccc64;
+                        svg{
+                            path{
+                                fill: #7ccc64;
+                            }
+                        }
+                        p{
+                            color: #7ccc64;
+                        }
+    
+                    }
+                }
+            }
+            form{
+                .form-group{
+                    margin-bottom: 1rem;
+
+                    .form-control{
+                        padding: 0.475rem 0.75rem;
+                        &:focus{
+                            box-shadow: 1px 1px 5px #7ccc64;
+                        }
+                        &::placeholder{
+                            color: #a9acac;
+                        }
+                    }
+                }
+                .btn{
+                    width: 100%;
+                    background-color: var(--aside-bg);
+                    color: #000;
+                    font-size: 1.2rem;
+
+                    &:hover{
+                        opacity: 0.8;
+                        
+
+                    }
+                }
+            }
+            .forgotPassword{
+                text-align: center;
+                margin-top: 0.4rem;
+                font-size: 0.9rem;
+                cursor: pointer;
+
+                &:hover{
+                    color: #000;
+                }
+            }
+
+        }
+
+        
+
+    }
+
+    // change password component starts
+    
+    .change-password-form{
+        // width: 40%;
+        // height: 50%;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0 rgba(10, 10, 10, 0.5);
+
+        form{
+            .form-group{
+                margin-bottom: 1rem;
+
+                label{
+                    font-size: 1.2rem;
+                }
+
+                .form-control{
+                    padding: 0.475rem 0.75rem;
+                    &:focus{
+                        box-shadow: 1px 1px 5px #7ccc64;
+                    }
+                    &::placeholder{
+                        color: #a9acac;
+                    }
+                }
+            }
+            .btn{
+                width: 100%;
+                background-color: var(--sec-color);
+                color: #000;
+                font-size: 1.2rem;
+
+                &:hover{
+                    opacity: 0.8;
+                    
+
+                }
+            }
+        }
+
+    }
+
+
+    // change password component ends
+}
